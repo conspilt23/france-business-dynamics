@@ -1,0 +1,19 @@
+{
+  "name": "France Business Dynamics",
+  "dataColors": ["#1F3A5F", "#2A9D8F", "#E9A23B", "#C0392B", "#7F8C8D", "#8E44AD", "#16A085", "#D35400"],
+  "background": "#FFFFFF",
+  "foreground": "#243447",
+  "tableAccent": "#1F3A5F",
+  "good": "#2A9D8F",
+  "neutral": "#E9A23B",
+  "bad": "#C0392B",
+  "maximum": "#1F3A5F",
+  "center": "#E9A23B",
+  "minimum": "#DCE6F2",
+  "textClasses": {
+    "callout": { "fontSize": 36, "fontFace": "Segoe UI Semibold", "color": "#1F3A5F" },
+    "title": { "fontSize": 14, "fontFace": "Segoe UI Semibold", "color": "#243447" },
+    "header": { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#243447" },
+    "label": { "fontSize": 10, "fontFace": "Segoe UI", "color": "#4A5A6A" }
+  }
+}

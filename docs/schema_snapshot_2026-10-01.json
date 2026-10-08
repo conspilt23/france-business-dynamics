@@ -1,0 +1,52 @@
+{
+  "snapshot_date": "2026-10-01",
+  "datasets": {
+    "stock_unite_legale": {
+      "rows": 30148401,
+      "columns": 35,
+      "column_names": [
+        "siren", "statutDiffusionUniteLegale", "unitePurgeeUniteLegale", "dateCreationUniteLegale",
+        "sigleUniteLegale", "sexeUniteLegale", "prenom1UniteLegale", "prenom2UniteLegale",
+        "prenom3UniteLegale", "prenom4UniteLegale", "prenomUsuelUniteLegale", "pseudonymeUniteLegale",
+        "identifiantAssociationUniteLegale", "trancheEffectifsUniteLegale", "anneeEffectifsUniteLegale",
+        "dateDernierTraitementUniteLegale", "nombrePeriodesUniteLegale", "categorieEntreprise",
+        "anneeCategorieEntreprise", "dateDebut", "etatAdministratifUniteLegale", "nomUniteLegale",
+        "nomUsageUniteLegale", "denominationUniteLegale", "denominationUsuelle1UniteLegale",
+        "denominationUsuelle2UniteLegale", "denominationUsuelle3UniteLegale",
+        "categorieJuridiqueUniteLegale", "activitePrincipaleUniteLegale",
+        "nomenclatureActivitePrincipaleUniteLegale", "nicSiegeUniteLegale",
+        "economieSocialeSolidaireUniteLegale", "societeMissionUniteLegale",
+        "caractereEmployeurUniteLegale", "activitePrincipaleNAF25UniteLegale"
+      ]
+    },
+    "stock_etablissement": {
+      "rows": 44282364,
+      "columns": 54,
+      "column_names": [
+        "siren", "nic", "siret", "statutDiffusionEtablissement", "dateCreationEtablissement",
+        "trancheEffectifsEtablissement", "anneeEffectifsEtablissement",
+        "activitePrincipaleRegistreMetiersEtablissement", "dateDernierTraitementEtablissement",
+        "etablissementSiege", "nombrePeriodesEtablissement", "complementAdresseEtablissement",
+        "numeroVoieEtablissement", "indiceRepetitionEtablissement", "dernierNumeroVoieEtablissement",
+        "indiceRepetitionDernierNumeroVoieEtablissement", "typeVoieEtablissement",
+        "libelleVoieEtablissement", "codePostalEtablissement", "libelleCommuneEtablissement",
+        "libelleCommuneEtrangerEtablissement", "distributionSpecialeEtablissement",
+        "codeCommuneEtablissement", "codeCedexEtablissement", "libelleCedexEtablissement",
+        "codePaysEtrangerEtablissement", "libellePaysEtrangerEtablissement",
+        "identifiantAdresseEtablissement", "coordonneeLambertAbscisseEtablissement",
+        "coordonneeLambertOrdonneeEtablissement", "complementAdresse2Etablissement",
+        "numeroVoie2Etablissement", "indiceRepetition2Etablissement", "typeVoie2Etablissement",
+        "libelleVoie2Etablissement", "codePostal2Etablissement", "libelleCommune2Etablissement",
+        "libelleCommuneEtranger2Etablissement", "distributionSpeciale2Etablissement",
+        "codeCommune2Etablissement", "codeCedex2Etablissement", "libelleCedex2Etablissement",
+        "codePaysEtranger2Etablissement", "libellePaysEtranger2Etablissement", "dateDebut",
+        "etatAdministratifEtablissement", "enseigne1Etablissement", "enseigne2Etablissement",
+        "enseigne3Etablissement", "denominationUsuelleEtablissement", "activitePrincipaleEtablissement",
+        "nomenclatureActivitePrincipaleEtablissement", "caractereEmployeurEtablissement",
+        "activitePrincipaleNAF25Etablissement"
+      ]
+    },
+    "stock_unite_legale_historique": {"rows": 72004236, "columns": 28},
+    "stock_etablissement_historique": {"rows": 96657561, "columns": 18}
+  }
+}

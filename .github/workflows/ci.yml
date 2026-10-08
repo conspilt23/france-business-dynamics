@@ -1,0 +1,55 @@
+name: CI
+
+# Intégration continue : installation, tests, validation de structure, compilation et import.
+# ⚠ Aucun téléchargement SIRENE (plusieurs Go) : la CI exécute uniquement les tests isolés du dépôt
+#   avec données synthétiques internes aux tests et des serveurs HTTP locaux. Aucun SQL Server : le modèle SQL est exécuté sur une
+#   émulation SQLite (voir docs/sql_server.md pour la validation sur un vrai serveur).
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Python ${{ matrix.python-version }} · ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.13", "3.14"]
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Installation
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Compilation du paquet
+        run: python -m compileall -q src
+
+      - name: Import du paquet
+        run: python -c "import france_business_dynamics; print(france_business_dynamics.__version__)"
+
+      - name: Validation de la structure du dépôt
+        run: python -m france_business_dynamics.validation.structure
+
+      - name: Tests (affichage de la progression par couche)
+        run: python -m pytest

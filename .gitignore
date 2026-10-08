@@ -1,0 +1,43 @@
+﻿# --- Secrets --------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- DonnÃ©es (jamais dans Git : volumineuses, reproductibles) ------------------------------------
+data/raw/*
+data/processed/*
+data/reference/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/reference/.gitkeep
+*.part
+*.part.json
+*.tmp
+*.parquet
+
+# --- Power BI ---------------------------------------------------------------------------------------
+# Le rapport final `dashboard/france-business-dynamics.pbix` est volontairement versionnÃ© (~15,5 Mo).
+# Les fichiers temporaires/projets locaux restent ignorÃ©s.
+*.pbit
+.pbi/
+
+# --- Python ----------------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Notebooks / Ã©diteurs / systÃ¨me ---------------------------------------------------------------
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

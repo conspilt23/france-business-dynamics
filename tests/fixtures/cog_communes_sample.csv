@@ -1,0 +1,10 @@
+TYPECOM,COM,REG,DEP,CTCD,ARR,TNCC,NCC,NCCENR,LIBELLE,CAN,COMPARENT
+COM,01004,84,01,01D,011,1,AMBERIEU EN BUGEY,Ambérieu-en-Bugey,Ambérieu-en-Bugey,0101,
+COM,2A001,94,2A,2A,2A1,0,AFA,Afa,Afa,2A01,
+COM,75056,11,75,75C,751,0,PARIS,Paris,Paris,,
+ARM,75101,11,75,75C,751,0,PARIS 1ER,Paris 1er Arrondissement,Paris 1er Arrondissement,,75056
+COM,69123,84,69,69M,691,0,LYON,Lyon,Lyon,,
+ARM,69381,84,69,69M,691,0,LYON 1ER,Lyon 1er Arrondissement,Lyon 1er Arrondissement,,69123
+COM,97411,04,974,974,974,0,SAINT DENIS,Saint-Denis,Saint-Denis,97401,
+COMD,01999,,,,,0,ANCIENNE,Ancienne,Ancienne commune déléguée,,01004
+COMA,01004,,,,,0,DOUBLON,Doublon,Doublon associé,,01004
